@@ -1,0 +1,32 @@
+@(userForm: Form[GameData])(implicit request: RequestHeader, messagesProvider: MessagesProvider)
+
+<div>
+    <div id="div-container">
+        <div class="pentago-header">
+            PENTAGO
+        </div>
+        <form action="/playground" method="post">
+            <div class="name-input-fields">
+                <div class="name-label">Name des ersten Spielers</div>
+                <input type="text" name="FirstName">
+            </div>
+            <div class="name-input-fields">
+                <div class="name-label">Name des zweiten Spielers</div>
+                <input type="text" name="SecondName">
+            </div>
+            <button type="submit" class="next_button">Weiter</button>
+        </form>
+    </div>
+</div>
+
+@helper.form(action = helper.CSRF(routes.HomeController.playground())){
+    <div class="name-input-fields">
+        <div class="name-label">Name des ersten Spielers</div>
+        <input type="text" name="FirstName">
+    </div>
+    <div class="name-input-fields">
+        <div class="name-label">Name des zweiten Spielers</div>
+        <input type="text" name="SecondName">
+    </div>
+    <button type="submit" class="next_button">Weiter</button>
+}

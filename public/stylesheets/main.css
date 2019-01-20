@@ -1,0 +1,36 @@
+
+#div-container{
+    margin:0 auto;
+    text-align:center;
+    height:100vh;
+    background-color: #80c846;
+    position: absolute;
+    left:0; right:0
+}
+.pentago-header{
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.name-input-fields {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.next_button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.textlabel {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.fieldbutton {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
